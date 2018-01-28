@@ -15,14 +15,19 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-  
-  
-  
+  <style>
+.vl {
+    border-left: 2px solid #ff3366;
+    height: 100%;
+    position: absolute;
+    left: 41%;
+    margin-left: 3px;
+    top: 0;
+}
+</style>
 </head>
 <body>
-<section class="menu cid-qDvmNTCn9F" once="menu" id="menu1-n" data-rv-view="379">
-
-    
+<section class="menu cid-qDvmNTCn9F" once="menu" id="menu1-n" data-rv-view="379">  
 
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +40,11 @@
         </button>
         <div class="menu-logo">
             <div class="navbar-brand">
-                
+                <span class="navbar-logo">
+                    <a href="index.html">
+                         <img src="assets/images/logo1-3045x2591.png" alt="Elevar" title="Elevar" media-simple="true" style="height: 3.8rem;">
+                    </a>
+                </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="#">ELEVAR</a></span>
             </div>
         </div>
@@ -50,7 +59,7 @@
                         Home</a>
                 </li><li class="nav-item dropdown"><a class="nav-link link text-white display-4" href="events.html" aria-expanded="false"><span class="mbri-extension mbr-iconfont mbr-iconfont-btn"></span>
                         Events</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="about-us.html"><span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="contact-us.html"><span class="mbri-chat mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a></li></ul>
+                        About</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="contact-us.html"><span class="mbri-chat mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="team.html"><span class="socicon socicon-googlegroups mbr-iconfont mbr-iconfont-btn"></span>Our Team</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="contact-us.html"></a></li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" href="register.html#form4-r"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Register
                     </a></div>
         </div>
@@ -71,7 +80,7 @@
         <div class="hoursCountdown" title="Hours"></div> 
         <div class="minutesCountdown" title="Minutes"></div> 
         <div class="secondsCountdown" title="Seconds"></div>
-        <div class="countdown pt-5 mt-2" data-due-date="2018/02/05"> 
+        <div class="countdown pt-5 mt-2" data-due-date="2018/02/10"> 
         </div>
     </div>
 </section>
@@ -83,10 +92,30 @@
     <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(7, 59, 76);">
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-md-6">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJ7R4QeGDjOzoRAVig2cgZPIU" allowfullscreen=""></iframe></div>
+                <h2 class="pb-3 mbr-fonts-style display-2">Login</h2>
+                <div>
+                    <form action="#" method="post" class="block mbr-form" name="login" id="login">
+                        <div class="row">
+                            <div class="col-md-8 multi-horizontal">
+                                <input type="email" class="form-control input" name="lEmail" id="lEmail" placeholder="Email"required>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 multi-horizontal">
+                                <input type="password" class="form-control input" name="lPass" id="lPass" placeholder="Password"required>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group-btn col-md-8" style="margin-top: 10px;"><button id="login" type="submit" class="btn btn-form btn-primary display-4">Login</button></div>
+                        </div>
+                    </form>
+                </div>
             </div>
+            <div class="vl"></div>
             <div class="col-md-6">
                 <h2 class="pb-3 align-left mbr-fonts-style display-2">Register with us</h2>
                 <div>
@@ -103,19 +132,69 @@
                 </div>
                 <div data-form-type="formoid">
                     <div data-form-alert="" hidden="">Thanks for registering with us!</div>
-                    <form class="block mbr-form" action="#/" method="post" data-form-title="Registration Form"><input type="hidden" data-form-email="true" value="F3hbmMLdX+uY+PQZC4AoqZq2E+Or3+twFvsQD1VpMpxFuhmw0kNp8fBbXAW6xP6yJPeI3gCtBW+lpWCToJOYl8etOGGGW80eEHJxGSvYwyDHofnlOegXnVs1ckrcFlcm">
+                    <form class="block mbr-form" action="#" method="post" data-form-title="Registration Form" name="reg" id="register">
+                        <!-- <input type="hidden" data-form-email="true" value="F3hbmMLdX+uY+PQZC4AoqZq2E+Or3+twFvsQD1VpMpxFuhmw0kNp8fBbXAW6xP6yJPeI3gCtBW+lpWCToJOYl8etOGGGW80eEHJxGSvYwyDHofnlOegXnVs1ckrcFlcm"> -->
                         <div class="row">
                             <div class="col-md-6 multi-horizontal" data-for="name">
-                                <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name" required="" id="name-form4-r">
+                                <input type="text" class="form-control input" name="name" data-form-field="Name" placeholder="Your Name" required id="name">
+                            </div>
+                            <div class="col-md-6 multi-horizontal">
+                                <input type="text" class="form-control input" id="id" required placeholder="Student Id">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 multi-horizontal" data-for="email">
+                                <input type="email" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required id="email">
                             </div>
                             <div class="col-md-6 multi-horizontal" data-for="phone">
-                                <input type="text" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone" required="" id="phone-form4-r">
+                                <input type="number" class="form-control input" name="phone" data-form-field="Phone" placeholder="Phone" id="phone">                           
                             </div>
-                            <div class="col-md-12" data-for="email">
-                                <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-r">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 multi-horizontal">
+                                <input type="password" class="form-control input" placeholder="Password" name="pass" id="pass" required>
                             </div>
-                            
-                            <div class="input-group-btn col-md-12" style="margin-top: 10px;"><button href="" type="submit" class="btn btn-form btn-primary display-4">Register</button></div>
+                            <div class="col-md-6 multi-horizontal">
+                                <input type="password" class="form-control input" placeholder="Confirm Password" name="cpass" id="cpass" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 multi-horizontal">
+                                <input type="text" class="form-control input" name="college"  placeholder="College" required id="clg">
+                            </div>
+                            <div class="col-md-6 multi-horizontal">
+                                <select name="branch" id="branch" class="custom-select form-control" required>
+                                    <option selected value="" disabled>Select branch</option>
+                                    <option value="che">Chemical Engineering</option>
+                                    <option value="civil">Civil Engineering</option>
+                                    <option value="cse">Computer Science Engineering</option>
+                                    <option value="ece">Electronics &amp; Communication Engineering</option>
+                                    <option value="eee">Electronics &amp; Electrical Engineering</option>
+                                    <option value="it">Information Technology</option>
+                                    <option value="mech">Mechanical Engineering</option>
+                                    <option value="power">Power Engineering</option>
+                                    <option value="other">Other</option>
+                                </select>                          
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 multi-horizontal">
+                                <select name="gender" id="gender" class="custom-select form-control" required>
+                                    <option value="" selected disabled>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 multi-horizontal">
+                                <select name="acc" id="acc" class="custom-select form-control" required>
+                                    <option value="" selected disabled>Select Accommodation</option>
+                                    <option value="yes">Yes (&#8377; 750)</option>
+                                    <option value="no">No (&#8377; 300)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group-btn col-md-12" style="margin-top: 10px;"><button href="" type="submit" class="btn btn-form btn-primary display-4" id="reg">Register</button></div>
                         </div>
                     </form>
                 </div>
@@ -125,11 +204,6 @@
 </section>
 
 <section class="cid-qDx9DXpfzv" id="footer1-1c" data-rv-view="384">
-
-    
-
-    
-
     <div class="container">
         <div class="media-container-row content text-white">
             <div class="col-12 col-md-3">
@@ -150,8 +224,7 @@
                     Contacts
                 </h5>
                 <p class="mbr-text">
-                    Email:p.harikesh409@gmail.com&nbsp;<br>Phone: +1 (0) 000 0000 001
-                    <br>Fax: +1 (0) 000 0000 002
+                    Email: <a href="mailto:info@elevar.tech?Subject=Query" target="_top">info@elevar.tech</a><br>Phone: +91 8500245387<br></p>
                 </p>
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
@@ -179,8 +252,12 @@
     </div>
 </section>
 
-
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/js/reg.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
